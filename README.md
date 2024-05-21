@@ -48,3 +48,18 @@ Weaknesses
 
 -Data Dependency: The quality and size of the training dataset directly impact the model's performance. Limited or low-quality data can lead to suboptimal results.
 
+### Evaluation Metrics
+
+-The general loss function used here is privy to the huggingface transformers. The loss function usesd here is the cross-entropy loss which is suitable for sequence to sequence tasks.
+
+-The other two metrics used were the BLEU score and the rogue score. These two metrics were selected as they are the standard metrics used in text generation and text summarization tasks respectively. These metrics provide insights into how well the generated answers match the reference answers, helping to identify areas for improvement.
+
+### Potential Improvements
+
+-Data Augmentation: Enhancing the dataset with more question-answer pairs or using data augmentation techniques can improve the model's performance.
+
+-Model Fine-tuning: Experimenting with different transformer architectures (e.g., BERT, GPT-3) or larger model sizes (e.g., t5-base, t5-large) might yield better results.
+
+-Hyperparameter Tuning: Conducting a thorough hyperparameter search to optimize learning rates, batch sizes, and other training parameters can lead to better model performance.
+
+-Attention Mechanisms: Incorporating advanced attention mechanisms or using models with built-in attention layers can improve the model's ability to generate accurate answers.
